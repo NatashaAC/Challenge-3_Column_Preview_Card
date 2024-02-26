@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+main {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 900px;
+    margin: 5% auto;
+}
+
+.card {
+    flex: 33.3%;
+    padding: 45px;
+}
+
+.card:nth-child(1) {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+.card:nth-child(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card:nth-child(3) {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+.cardIcon {
+    width: 50px;
+}
+
+.cardTitle {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+.cardTxt {
+    color: hsla(0, 0%, 100%, 0.5);
+    padding-bottom: 100px;
+}
+
+.cardBtn {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+.card:nth-child(1) .cardBtn {
+    color: hsl(31, 77%, 52%);
+}
+
+.card:nth-child(2) .cardBtn {
+    color: hsl(184, 100%, 22%);
+}
+
+.card:nth-child(3) .cardBtn {
+    color: hsl(179, 100%, 13%);
+}
+
+.card:nth-child(1) .cardBtn:hover, .card:nth-child(2) .cardBtn:hover, .card:nth-child(3) .cardBtn:hover {
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+    background-color: hsla(0, 0%, 100%, 0);
+    cursor: pointer;
+}
+
+.credits {
+    bottom: 0;
+    padding: 5px;
+    color: hsla(179, 100%, 13%, 0.75);
+    font-size: 12px;
+    text-align: center;
+}
+
+.credits p a {
+    color: hsl(184, 100%, 22%);
+    text-decoration: none;
+    font-style: italic;
+}
+
+@media screen and (max-width: 375px) {
+    main {
+        flex-wrap: wrap;
+        padding: 25px;
+    }
+    .card {
+        flex: 100%;
+    }
+    .card:nth-child(1) {
+        border-radius: 10px 10px 0 0;
+    }
+    .card:nth-child(3) {
+        border-radius: 0 0 10px 10px;
+    }
+    .cardTitle {
+        font-size: 40px;
+    }
+    .cardTxt {
+        padding-bottom: 20px;
+    }
+}
