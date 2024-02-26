@@ -27,12 +27,12 @@ Your users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./design/live_site.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Frontend Mentor Solution -> https://www.frontendmentor.io/solutions/3-column-preview-card-NXqCgWLVOS
+- Live Site -> https://natashaac.github.io/Challenge-3_Column_Preview_Card/
 
 ## My process
 

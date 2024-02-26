@@ -7,13 +7,18 @@
 body, html {
     font-family: 'Lexend Deca', sans-serif;
     font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
 }
 
 main {
     display: flex;
     flex-wrap: nowrap;
     max-width: 900px;
-    margin: 5% auto;
+    margin: 10% auto;
+}
+
+h1 {
+    display: none;
 }
 
 .card {
@@ -80,11 +85,11 @@ main {
 }
 
 .credits {
+    position: fixed;
     bottom: 0;
     padding: 5px;
     color: hsla(179, 100%, 13%, 0.75);
     font-size: 12px;
-    text-align: center;
 }
 
 .credits p a {
